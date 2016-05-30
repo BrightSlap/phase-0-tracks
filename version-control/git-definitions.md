@@ -12,4 +12,4 @@
 >A commit is an on-demand Save Point. When making a good commit message, it should be detailed on what was updated since the last commit.
 
 * What is a merge conflict?
->A merge conflict is when the current branch and a merging branch onto the current branch are no longer the same. They have diverged. To fix such conflict, the user must go back in the merging branch to find out what was done to cause it to be different than from the current branch. Media examples would _Steins;Gate_ or _Rick and Morty_'s "A Rickle in Time."
+>A merge conflict is when the current branch and a merging branch onto the current branch are no longer the same. They have diverged. To fix such conflict, the user must go back in the merging branch to find out what was done to cause it to be different than from the current branch. 
