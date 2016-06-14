@@ -1,0 +1,20 @@
+Elevator
+
+
+
+
+
+
+Brushing Teeth.
+- Extend hand towards toothbrush:
+	-Until toothbrush is touching palm of hand, keep extending.
+	-If toothbrush is touching palm of hand, close fingers around toothbrush.
+	-When toothbrush is secured in hand, retract hand back to body at waist height.
+- Extend hand towards tooth paste with unoccupied hand:
+	-Until tooth paste is touching palm of hand, keep extending.
+	-If tooth paste is touching palm of hand, close fingers around tooth paste.
+	-When tooth paste is secured in hand, retract hand back to body at waist height.
+- Apply tooth paste to toothbrush
+	-If toothpaste has twist-off cap, using thumb and finger one, twist cap counter-clock wise until it comes off.
+	-if toothpaste has a simple cap, using thumb, flick the cap off.
+	-Once cap is off, squeeze toothpaste onto brush side of 
