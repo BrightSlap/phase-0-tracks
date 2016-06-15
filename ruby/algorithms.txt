@@ -1,6 +1,17 @@
 Elevator
-
-
+*Assumptions: Robot is facing elevator doors. Elevator panel is on the right hand side, next to the elevator doors. Elevator has two columns of floor buttons in ascending order from bottom to top. Elevator buttons have odd floors on left, and even floors on right. Robot is in no rush, and therefore, will not interact with Open/Close Door buttons.*
+Call elevator
+	- If Elevator doors are closed, push call elevator button.
+	-Else, walk through elevator doors until completely through.
+Access Panel
+	-Orient self 90° to the left and walk until elevator door is not blocked.
+	-Orients self 90° again to face Elevator Panel.
+Request floor
+	-Recieve instructions on which floor to go.
+	-If floor is odd, search for button from left side of the panel. When found, push button and wait.
+	-If floor is even, search for button from right side of the panel. When found, push button and wait.
+Leaving Elevator
+	-Sense doors open, retrace physical moments to leave elevator.
 
 
 
@@ -17,4 +28,20 @@ Brushing Teeth.
 - Apply tooth paste to toothbrush
 	-If toothpaste has twist-off cap, using thumb and finger one, twist cap counter-clock wise until it comes off.
 	-if toothpaste has a simple cap, using thumb, flick the cap off.
-	-Once cap is off, squeeze toothpaste onto brush side of 
+	-Once cap is off, squeeze toothpaste onto brush side of toothbrush.
+	-Drop toothpaste.
+- Brushing teeth
+	-Raise hand holding toothbrush up to mouth height.
+	-Open mouth, and gently clench teeth.
+	-Insert toothbrush with brush side first into mouth.
+	-Move brush in ovular motion for 3 minutes.
+	-Remove brush from mouth.
+	-Drop toothbrush.
+- Rinse
+	-Move mouth to faucet.
+	-Turn on faucet.
+	-Unitl mouth is full of water, keep faucet on, else turn off faucet.
+	-Gargle water in mouth.
+	-Drop water out from mouth.
+- Smile.
+
