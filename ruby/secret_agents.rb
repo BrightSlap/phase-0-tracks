@@ -62,7 +62,7 @@ decrypt ("afe")
 decrypt(encrypt("swordfish"))
 
 
-
+%%
 ask agent whether encrypt or decrypt.
 input answer.
 if answer is encrypt, call encrypt method
