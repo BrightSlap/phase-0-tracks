@@ -58,7 +58,7 @@ encrypt ("zed")
 decrypt ("bcd")
 decrypt ("afe")
 
-%%
+
 decrypt(encrypt("swordfish"))
 
 
@@ -70,7 +70,7 @@ if answer is decrypt, call decrypt method.
 display result and exit
 %
 
-%%
+
 puts "Would you like to encrypt or decrypt?"
 choice = gets.chomp
 
@@ -80,4 +80,3 @@ if choice == "encrypt"
  encrypt (pass)
 else decrypt (pass)
 end
-%
