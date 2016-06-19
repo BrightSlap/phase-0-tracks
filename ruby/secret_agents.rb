@@ -9,13 +9,16 @@ def encrypt (code)
 puts "Encryption"
 index = 0;
 while index<code.length
-	code[index] = code[index].next!
-	if code[index] == "!"
+	if code[index] ==" "
 		code[index] = " "
+		elsif code[index] == "z"
+			code[index] = "a"
+		else
+			code[index] = code[index].next!
 	end
 	index +=1
 end
-puts code.to_s
+p code
 end
 
 %%
@@ -47,19 +50,19 @@ while index<code.length
 	index +=1
 
 end
-puts code.to_s
+p code
 end
-%%
+
 encrypt ("abc")
 encrypt ("zed")
 decrypt ("bcd")
 decrypt ("afe")
 
-
-decrypt(encrypt("swordfish"))
-%
-
 %%
+decrypt(encrypt("swordfish"))
+
+
+
 ask agent whether encrypt or decrypt.
 input answer.
 if answer is encrypt, call encrypt method
@@ -67,6 +70,7 @@ if answer is decrypt, call decrypt method.
 display result and exit
 %
 
+%%
 puts "Would you like to encrypt or decrypt?"
 choice = gets.chomp
 
@@ -76,3 +80,4 @@ if choice == "encrypt"
  encrypt (pass)
 else decrypt (pass)
 end
+%
