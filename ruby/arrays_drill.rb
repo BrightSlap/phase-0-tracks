@@ -1,3 +1,13 @@
+def ocean(para1, para2, para3)
+	oceans = [para1, para2, para3]
+end
+
+def all_the_things(arr, val1)
+	seas=arr << (val1)
+	p seas
+end
+
+
 zoo = []
 p zoo
 
@@ -25,3 +35,11 @@ aquarium = ["Sharks", "Dolphins", "Whales", "Dory"]
 animal_park = zoo + aquarium
 
 p animal_park
+
+ocean("Pacific", "Atlantic", "Indian")
+
+all_the_things(["Baltic", "Arctic"], "Mediterranean")
+
+all_the_things(["Baltic", "Arctic", "Mediterranean"], "Dead")
+
+all_the_things(["Baltic", "Arctic", "Mediterranean", "Dead"], "Celtic")
