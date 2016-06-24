@@ -1,5 +1,5 @@
 # hash name client
-# Keys: Name, Age, Marital Status, Number of children, decor theme.
+# keys: Name, Age, Marital Status, Number of children, decor theme.
 # Values: gets.chomp.to_s/gets.chomp.to_i
 
 client = {}
@@ -31,4 +31,14 @@ p client
 puts "Is there anything you would like to update?(y/n)"
 update = gets.chomp.downcase
 if update != "n"
-	puts "What "
+	puts "Which part would you like to update?"
+	p client.keys
+	key = gets.chomp
+	puts "What would you like to update it to?"
+	if key == children
+		client[key] = gets.chomp.to_i
+	else 
+		client[key]	= gets.chomp.to_s
+	end
+end
+
