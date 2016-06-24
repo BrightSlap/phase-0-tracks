@@ -2,7 +2,8 @@
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps: 
   # example.split(' ')	
-  # [fill in any steps here]
+  # set hash inside
+  # 
   # set default quantity
   # print the list to the console [can you use one of your other methods here?]
 # output: [what data type goes here, array or hash?]
@@ -29,29 +30,38 @@
 
 # hash = {:key = value}
 
-def groceries(items)
+def groceries
+	puts "What items would you like on your list?"
+	items = gets.chomp.to_s
 	things = items.split(' ')
 	grocery_list = {}
 	things.each do |item|
-		grocery_list[item] = 0
+		puts "How many #{item} would you like?"
+		quantity = gets.chomp.to_i
+		grocery_list[item] = quantity
 	end
 	grocery_list
 end 
 
-def needed(necessity)
-	necessity
+def needed(list, necessity)
+	puts "How many #{necessity} would you like to add to your list?"
+	quantity = gets.chomp.to_i
+	puts "Added #{quantity} #{necessity} to the list."
+	list[necessity] = quantity
 end
 
 def unnecessary(list, greed)
+	puts "Removed #{greed} from the list."
 	list.delete(greed)
 end
 
-def how_many(list)
-	list.each do |item, quantity|
-		puts "How many of #{item} would you like?"
-		quantity = gets.chomp.to_i
-		list[item] = quantity
-	end
+def update(list)
+	p list.keys
+	puts "Which item would you like to update the quantity of?"
+	item = gets.chomp.to_s
+	puts "What would you like to update the quantity to?"
+	quantity = gets.chomp.to_i
+	list[item] = quantity
 end
 
 def display_list(list)
@@ -62,14 +72,26 @@ def display_list(list)
 end
 
 
-grocery_list = groceries("carrots apples cereal pizza")
+grocery_list = groceries
 p grocery_list
-grocery_list[needed("bananas")] = 0
+needed(grocery_list, "bananas")
 p grocery_list
 unnecessary(grocery_list, "apples")
 p grocery_list
-how_many(grocery_list)
+update(grocery_list)
 p grocery_list
 display_list(grocery_list)
 
 
+grocery_list = groceries
+p grocery_list
+unnecessary(grocery_list, "lemonade")
+p grocery_list
+update(grocery_list)
+p grocery_list
+display_list(grocery_list)
+
+# 1. Well, I don't really like it. I'm more of a person who jumps right into coding. I do, however understand the value of it.
+# It's basically creating a skeleton of the entire program, of what you want it to do and what it should do.
+
+#2. 
