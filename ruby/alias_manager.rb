@@ -54,7 +54,10 @@ until real_name == "quit"
 		break
 	end
 	p next_consonant(next_vowel(reverse(real_name)))
-	alias_database  next_consonant(next_vowel(reverse(real_name)))
+	real_name.to_sym
+	alias_database[real_name] =  next_consonant(next_vowel(reverse(real_name)))
 end
 
-alias_database.each 
+alias_database.each do |real , psuedonym|
+	p "#{psuedonym}'s real name is #{real}."
+end
