@@ -33,9 +33,9 @@ update = gets.chomp.downcase
 if update != "n"
 	puts "Which part would you like to update?"
 	p client.keys
-	key = gets.chomp
+	key = gets.chomp.to_sym
 	puts "What would you like to update it to?"
-	if key == children
+	if key == :number_children
 		client[key] = gets.chomp.to_i
 	else 
 		client[key]	= gets.chomp.to_s
