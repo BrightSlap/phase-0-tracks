@@ -46,9 +46,10 @@ dragon_type = ["Drake", "Serpent", "Wyrm", "Wyvern"]
 dragon_color = ["Black", "Green", "Red", "Bronze", "Gold", "Silver"]
 dragon_age = ["Adult", "Young", "Whelp"]
 
-dragon_color.length.times do |i|
-	dragon = Dragon.new(dragon_age.shuffle[1], dragon_color[i], dragon_type.shuffle[1])
-	dragon.speak(rand(60))
-	dragon.trick
-	dragon.breath_attack(dragon_color[i])
-end
+# dragon_color.length.times do |i|
+# 	dragon = Dragon.new(dragon_age.shuffle[1], dragon_color[i], dragon_type.shuffle[1])
+# 	dragon.speak(rand(60))
+# 	dragon.trick
+# 	dragon.breath_attack(dragon_color[i])
+# end
+
