@@ -29,7 +29,7 @@
 
 
 class Santa
-	
+
 	attr_reader :raindeer_rank, :ethnicity
 	attr_accessor :gender, :age
 	
@@ -47,6 +47,10 @@ class Santa
 		puts "That was a good #{cookie_type}!"
 	end
 	
+	def raindeer_ranking
+		raindeer = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+	end
+	
 	def age(number)
 		age = number
 		@age = age
@@ -60,14 +64,30 @@ class Santa
 		@raindeer_rank = raindeer_rank
 		puts "This santa's raindeer ranking goes: #{@raindeer_rank}"
 	end
+
+
+	# def gender= (new_gender)
+	# 	@gender = new_gender
+	# end
+	
+	# def age
+	# 	@age
+	# end
+	
+	# def ethnicity
+	# 	@ethnicity
+	# end
+		
 end
 
-# 
-# p santa = Santa.new("attack helicopter", "metal")
-# p santa.get_mad_at(raindeer, "Rudolph")
-# p santa.get_mad_at(raindeer, "Blitzen")
-# p santa.gender = "female"
+# santas = []
+# example_genders = ["female", "bigender", "male", "attack helicopter", "N/A"]
+# example_ethnicities = ["latino", "white", "asian", "metal", "N/A"]
+# example_genders.length.times do |i|
+#   santas << Santa.new(example_genders[i], example_ethnicities[i])
+# end
 
+# p santas
 
 
 example_genders = ["female", "bigender", "male", "attack helicopter", "N/A"]
