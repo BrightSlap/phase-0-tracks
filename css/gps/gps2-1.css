@@ -1,0 +1,43 @@
+body {
+      max-width: 960px;
+}
+
+#header {
+      float: top;
+      border: solid; 
+}
+
+h1 {
+      text-align: center;
+}
+.column-1 { 
+    width: 469px;
+    float: left;
+    margin-bottom: 30px;
+    border-right: solid;
+    border-color: black;
+    border-width: 2px;
+
+}
+
+.column-1:hover {
+      color: red;
+}
+
+.column-2 { 
+    width: 469px;
+    float: right;
+    margin-bottom: 30px;
+    padding-bottom: 21.19px;
+    padding-left: 10px;
+}
+
+.column-2:hover {
+      color: green;
+}
+
+#footer {
+    padding: 30px;
+    text-align: center;
+}
+

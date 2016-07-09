@@ -1,0 +1,30 @@
+#contact-info {
+	font-size: .8em;
+}
+
+.job {
+	background-color: #e9e5dc;
+	border-radius: 25px;
+    padding: 20px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.accomplishments {
+	font-size: .8em;
+}
+
+/*
+1. The "Cascading" portion of Cascading Style Sheets means that styles can flow through multiple style sheets. This allows for multiple style sheets to be used in a single HTML document.
+When there is a conflict between two stylesheets, it is resolved through weight and origin. The origin refers to the author, who gets the highest preference. The only way for that to be overridden is if the user's stylesheet has a higher weight or an "!important" declaration. The weight is identified through how specific the selector is. For example, a ".class p" file is more specific than a "p", and will therefore hold more weight.
+
+2. Following psuedo-class declares the state of the link as visited and changes the color of it:
+a:link {
+    color: #FF0000;
+};
+
+3. The right carrot ">" is used to select a child element that is nested within the parent element. Such an example would be:
+
+div > span {
+  background-color: DodgerBlue;
+}
