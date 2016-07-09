@@ -80,6 +80,12 @@ class Santa
 		
 end
 
+# raindeer = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"] 
+# p santa = Santa.new("attack helicopter", "metal")
+# p santa.get_mad_at(raindeer, "Rudolph")
+# p santa.get_mad_at(raindeer, "Blitzen")
+# p santa.gender = "female"
+
 # santas = []
 # example_genders = ["female", "bigender", "male", "attack helicopter", "N/A"]
 # example_ethnicities = ["latino", "white", "asian", "metal", "N/A"]
