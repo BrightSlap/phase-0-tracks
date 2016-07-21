@@ -21,14 +21,15 @@ class Dragon
 	attr_reader :age, :sleep_time
 	attr_accessor :type, :color
 
-	def initialize(age, type, color)
+
+	def initialize(age, color, type)
 		@age = age
 		@type = type
 		@color = color
 		puts "The sleeping dragon is a #{@age} #{@color} #{@type}"
 	end
 
-	def speak(years)
+	def awake(years)
 		@sleep_time = years
 		puts "Who dares disturb my slumber of #{@sleep_time} years!?"
 	end
@@ -53,3 +54,26 @@ dragon_age = ["Adult", "Young", "Whelp"]
 # 	dragon.breath_attack(dragon_color[i])
 # end
 
+puts "How many instances of this class would you like to create?"
+instance_num = gets.chomp.to_i
+Dragons = []
+instance_num.times do 
+	p dragon_age
+	puts "How old would you like your dragon to be?"
+	age = gets.chomp.to_s
+	puts "What color would you like your dragon to be?"
+	color = gets.chomp.to_s
+	p dragon_type
+	puts "What kind of dragon would you like it to be?"
+	type = gets.chomp.to_s
+	dragon = Dragon.new(age, color, type)
+	puts "How many years would you like your dragon to have slept for?"
+	years = gets.chomp.to_i
+	dragon.awake(years)
+	dragon.breath_attack
+	Dragons << dragon
+end
+
+Dragons.each do |attributes|
+	puts "The attributes of this dragon is a #{attributes.age} #{attributes.color} #{attributes.type} that has slept for #{attributes.sleep_time} years."
+end
