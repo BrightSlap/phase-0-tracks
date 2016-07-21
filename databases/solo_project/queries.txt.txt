@@ -1,0 +1,76 @@
+SELECT * FROM monster;
+
+|Rathalos|2|true|1
+|Brachydios|2|true|1
+|Zinogre|4|true|1
+|Kirin|4|false|4
+|Plum Daimyo Hermitaur|4|true|2
+|Plesioth|2|true|1
+|Arzuros|2|true|3
+|Bulldrome|4|true|3
+|Blangonga|2|true|3
+|Chameleos|4|false|4
+
+UPDATE monster SET number_of_legs=4 WHERE name="Arzuros";
+
+|Rathalos|2|true|1
+|Brachydios|2|true|1
+|Zinogre|4|true|1
+|Kirin|4|false|4
+|Plum Daimyo Hermitaur|4|true|2
+|Plesioth|2|true|1
+|Arzuros|4|true|3
+|Bulldrome|4|true|3
+|Blangonga|2|true|3
+|Chameleos|4|false|4
+
+SELECT * FROM monster, monster_type WHERE monster.type_id=monster_type.id;
+
+|Rathalos|2|true|1|1|Wyvern
+|Brachydios|2|true|1|1|Wyvern
+|Zinogre|4|true|1|1|Wyvern
+|Kirin|4|false|4|4|Elder Dragon
+|Plum Daimyo Hermitaur|4|true|2|2|Carapaceon
+|Plesioth|2|true|1|1|Wyvern
+|Arzuros|4|true|3|3|Beast
+|Bulldrome|4|true|3|3|Beast
+|Blangonga|2|true|3|3|Beast
+|Chameleos|4|false|4|4|Elder Dragon
+
+SELECT monster.name, monster_type.type, monster.trappable FROM monster J
+OIN monster_type ON monster.type_id = monster_type.id;
+
+Rathalos|Wyvern|true
+Brachydios|Wyvern|true
+Zinogre|Wyvern|true
+Kirin|Elder Dragon|false
+Plum Daimyo Hermitaur|Carapaceon|true
+Plesioth|Wyvern|true
+Arzuros|Beast|true
+Bulldrome|Beast|true
+Blangonga|Beast|true
+Chameleos|Elder Dragon|false
+
+DELETE FROM monster
+WHERE trappable="false";
+
+|Rathalos|2|true|1
+|Brachydios|2|true|1
+|Zinogre|4|true|1
+|Plum Daimyo Hermitaur|4|true|2
+|Plesioth|2|true|1
+|Arzuros|4|true|3
+|Bulldrome|4|true|3
+
+SELECT monster.name, monster.trappable, monster_type.type FROM monster
+LEFT OUTER JOIN monster_type ON monster.type_id = monster_type.id;
+
+Rathalos|true|Wyvern
+Brachydios|true|Wyvern
+Zinogre|true|Wyvern
+Plum Daimyo Hermitaur|true|Carapaceon
+Plesioth|true|Wyvern
+Arzuros|true|Beast
+Bulldrome|true|Beast
+Blangonga|true|Beast
+|Blangonga|2|true|3
