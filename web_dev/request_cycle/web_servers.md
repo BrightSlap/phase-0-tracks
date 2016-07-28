@@ -10,4 +10,3 @@ Virtual Private Server
  	- Segregated, no direct effect from a server's activity and customization to another server.
  	- Since it has an allocated amount of resources (CPU usage, memory and RAM), it's best to be used for small or medium sized websites.
  As a root user, all admin powers are granted. if programs are run, irreversible changes can be made to the system.
- 

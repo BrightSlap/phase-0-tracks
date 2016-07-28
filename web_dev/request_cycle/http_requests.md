@@ -22,4 +22,3 @@ Post Request - submits data from specified resource
 
 HTTP cookie
 cookie is a piece of data sent from website and cached in user's web browser while still being browsed.
- 
